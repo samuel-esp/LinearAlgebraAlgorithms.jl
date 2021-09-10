@@ -1,4 +1,4 @@
-#Bellman Ford
+# Bellman Ford
 
 **Definition (Wikipedia)** 
 
@@ -8,4 +8,4 @@
 
 function bellmanford(A, s, n)
 
-*computes the shortest path from a source node. Takes the matrix A, the source node s and the number of nodes n*
+*computes the shortest path from a source node. Takes the matrix A, the source node s and the number of nodes n, the result is returned as a vector*

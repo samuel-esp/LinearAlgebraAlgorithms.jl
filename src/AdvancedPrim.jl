@@ -56,6 +56,6 @@ function a_prim(A, n)
     print("MINIMUM SPANNING TREE EDGES")
     print("\n\n\n")
     print(mst)
-    return weight
+    return weight, mst
 
 end

@@ -48,5 +48,6 @@ function b_prim(A, n)
     print(" ALL THE NODES HAVE BEEN PROCESSED (INF)")
     print("\n\n\n")
     print(m')
+    return weight
 
 end

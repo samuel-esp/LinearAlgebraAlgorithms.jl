@@ -1,0 +1,15 @@
+name = "GraphBlasAlgorithmsFinal"
+uuid = "a3962942-b1a6-4bca-ab91-15b65c0f1ada"
+authors = ["Samuel Esposito <40698384+samuel-esp@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1"

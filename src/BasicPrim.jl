@@ -1,0 +1,52 @@
+#=
+BasicPrim:
+- Julia version: 1.6.2
+- Author: samuel
+- Date: 2021-09-10
+=#
+
+using SuiteSparseGraphBLAS
+using SparseArrays
+
+function stoppingCondition(m, n)
+
+infinito = true
+
+for i = 1:n
+        if(m[i] == 0.0)
+            return false
+    end
+end
+    return infinito
+end
+
+#A is the input matrix, n is the number of nodes, Output: minimum spanning tree cost
+function prim(A, n)
+
+    m = GBVector([Inf, 0.0, 0.0, 0.0])
+    d = GBVector{Float64}(n)
+
+    weight = 0.0
+
+    d = A[1,:]
+    print("INITIAL WEIGHT: ")
+    print(weight)
+    print("\n\n")
+    while(stoppingCondition(m, n) == false)
+
+        u = argmin(m'+d)
+        m[u[2]] = Inf
+        weight = weight + d[u[2]]
+        print("WEIGHT: ")
+        print(weight)
+        d = emul(d, A[u[1],:],  BinaryOps.MIN)
+        print("  ITERATION FINISHED")
+        print("\n\n\n")
+    end
+
+    print("COMPLETED")
+    print(" ALL THE NODES HAVE BEEN PROCESSED (INF)")
+    print("\n\n\n")
+    print(m')
+
+end

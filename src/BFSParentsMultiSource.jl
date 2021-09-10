@@ -23,7 +23,7 @@ function insert(P, R, s, n)
 end
 
 #A is the input matrix, S are the sources, n is the number of nodes, s is the number of sources, Output: Parents matrix
-function bfs_parents(A, S, n, s)
+function ms_bfsp(A, S, n, s)
 
     index = GBMatrix{Int64}(s, n)
             for i = 1:n

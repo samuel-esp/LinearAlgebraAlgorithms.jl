@@ -22,7 +22,7 @@ end
 end
 
 #A is the input matrix, n is the number of nodes, Output: minimum spanning tree and minimum spanning tree cost
-function prim(A, n)
+function a_prim(A, n)
 
     m = GBVector([Inf, 0.0, 0.0, 0.0]) #source matrix
     d = GBVector{Float64}(n)
@@ -56,5 +56,6 @@ function prim(A, n)
     print("MINIMUM SPANNING TREE EDGES")
     print("\n\n\n")
     print(mst)
+    return weight
 
 end

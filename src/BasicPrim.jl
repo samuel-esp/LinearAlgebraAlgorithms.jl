@@ -21,7 +21,7 @@ end
 end
 
 #A is the input matrix, n is the number of nodes, Output: minimum spanning tree cost
-function prim(A, n)
+function b_prim(A, n)
 
     m = GBVector([Inf, 0.0, 0.0, 0.0])
     d = GBVector{Float64}(n)

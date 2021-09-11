@@ -76,4 +76,6 @@ function bfs_parents(A, s, n)
     print("RESULT\n\n")
     print(result')
 
+    return result
+
 end

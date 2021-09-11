@@ -40,4 +40,6 @@ function bfs_level(A, s, n)
             #frontier = mul(frontier, A, Semirings.ANY_PAIR, mask=distance, desc=Descriptors.D)
     end
 
+    return distance
+
 end

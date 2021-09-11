@@ -54,5 +54,6 @@ function ms_bfsl(A, S, n, s)
     end
 
     print("END")
+    return distance
 
 end

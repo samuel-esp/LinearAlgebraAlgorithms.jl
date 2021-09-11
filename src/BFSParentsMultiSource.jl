@@ -72,5 +72,7 @@ function ms_bfsp(A, S, n, s)
     print("RESULT\n\n")
     print(R)
 
+    return R
+
 end
 

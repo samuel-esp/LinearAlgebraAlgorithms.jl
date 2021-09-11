@@ -23,4 +23,6 @@ function bellmanford(A, s, n)
             print(d)
     end
 
+    return d
+
 end

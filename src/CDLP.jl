@@ -83,5 +83,6 @@ function cdlp(A, n, t)
     end
 
     print("\n\n\nFINISHED")
+    return lab
 
 end

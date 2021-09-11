@@ -26,4 +26,6 @@ function cohen(A)
     print("RESULT ")
     print(result)
 
+    return result
+
 end

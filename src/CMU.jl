@@ -29,4 +29,5 @@ function cmu(A, n)
     print("RESULT: ")
     print(t)
 
+    return t
 end

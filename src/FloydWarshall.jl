@@ -14,6 +14,7 @@ function floydwarshall(A, n)
     #distance matrix = input matrix
     D = A
     print(D)
+    result = GBMatrix{Int64}(n, n)
 
 
     for i = 1:n
@@ -21,6 +22,9 @@ function floydwarshall(A, n)
             partial = mul(D[:,i], D[i,:], Semirings.MIN_PLUS)
             D = emul(D, partial,  BinaryOps.MIN)
             print(partial)
+            result = partial
     end
+
+    return result
 
 end

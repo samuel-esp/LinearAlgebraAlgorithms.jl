@@ -22,5 +22,6 @@ function sandia(A)
     print("\n\n")
     print("RESULT ")
     print(result)
+    return result
 
 end

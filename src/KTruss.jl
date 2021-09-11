@@ -24,6 +24,8 @@ function ktruss(A, k, n)
        print("\n\n\n")
     end
 
+    return C
+
 end
 
 #***

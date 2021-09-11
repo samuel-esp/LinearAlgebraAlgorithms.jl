@@ -16,5 +16,6 @@ function nodewise_tc(A)
     partial = mul(A, A, Semirings.PLUS_TIMES, mask=A)
     t = reduce(Monoids.PLUS_MONOID[Float64], partial, dims=2)
     print(t/2)
+    return t/2
 
 end

@@ -50,7 +50,6 @@ function ms_bfsl(A, S, n, s)
             print("ITERATION COMPLETED")
             print("\n\n")
 
-            #print(distance)
     end
 
     print("END")

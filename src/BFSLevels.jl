@@ -35,9 +35,7 @@ function bfs_level(A, s, n)
             print(distance)
             print("\n")
             distance[frontier] .= level
-            #print(distance)
-            frontier = mul(frontier, A, Semirings.LOR_LAND)#, mask=distance, desc=Descriptors.C)
-            #frontier = mul(frontier, A, Semirings.ANY_PAIR, mask=distance, desc=Descriptors.D)
+            frontier = mul(frontier, A, Semirings.LOR_LAND)
     end
 
     return distance

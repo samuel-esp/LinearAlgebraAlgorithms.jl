@@ -16,9 +16,10 @@ function cmu(A, n)
 
         for i = 2:n-1
 
-            A20 = A[i+1:end,begin:i-1]
-            a10 = A[begin:i-1, i:i]
-            a12 = A[i:i, i+1:end]
+            #rpva
+            A20 = A[i+1:n,begin:i]
+            a10 = A[begin:i, i]
+            a12 = A[i, i+1:n]
 
             partial1 = mul(a10', A20', Semirings.PLUS_TIMES)
             partial2 = mul(partial1, a12', Semirings.PLUS_TIMES)

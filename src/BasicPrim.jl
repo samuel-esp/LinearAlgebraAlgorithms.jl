@@ -20,10 +20,9 @@ end
     return infinito
 end
 
-#A is the input matrix, n is the number of nodes, Output: minimum spanning tree cost
-function b_prim(A, n)
+#A is the input matrix, n is the number of nodes, m is the source matrix Output: minimum spanning tree cost
+function b_prim(A, n, m)
 
-    m = GBVector([Inf, 0.0, 0.0, 0.0])
     d = GBVector{Float64}(n)
 
     weight = 0.0

@@ -52,7 +52,7 @@ for i = 1:n
     return lab
 end
 
-#A is the input matrix, s is the source node, and n is the number of nodes, Output: label propagation matrix
+#A is the input matrix, n is the number of nodes, t the number of iterations Output: label propagation matrix
 function cdlp(A, n, t)
 
     lab = GBMatrix{Int64}(n,n)

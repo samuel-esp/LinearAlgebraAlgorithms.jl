@@ -12,4 +12,5 @@ using Test
 
 include("/Users/samuel/Documents/Jupyter/GraphBlasAlgorithmsFinal/src/BasicPrim.jl")
 matrix =  GBMatrix([[0.0, 7.0, 5.0, 5.0] [7.0, 0.0, 0.0, 0.0] [5.0, 0.0, 0.0, 0.0] [5.0, 0.0, 0.0, 0.0]])
-@test b_prim(matrix, 4) == 17.0
+m = GBVector([Inf, 0.0, 0.0, 0.0]) #source matrix
+@test b_prim(matrix, 4, m) == 17.0

@@ -12,4 +12,4 @@ function stoppingCondition(m, n)
 
 function prim(A, n)
 
-*computes the miniminum spanning tree cost. Takes the matrix A and the number of nodes*
+*computes the miniminum spanning tree cost. Takes the matrix A, n the number of nodes, m the source vector*

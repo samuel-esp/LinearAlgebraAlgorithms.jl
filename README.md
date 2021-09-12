@@ -1,4 +1,4 @@
-# GraphBlasAlgorithms.jl
+# LinearAlgebraAlgorithms.jl
 
 ![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)<!--
 ![Lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
